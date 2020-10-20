@@ -25,6 +25,12 @@ header {
     box-sizing: border-box;
 }
 
+.title {
+    margin-bottom: 15px;
+    color: #aaa;
+    font-size: 30px;
+}
+
 .links {
     font-size: 22px;
 }

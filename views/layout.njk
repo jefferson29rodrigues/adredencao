@@ -6,16 +6,20 @@
     
 
     {% block head %}
-        <title>Gym Manager</title>    
+        <title>AD Redenção</title>    
     {% endblock %}
 
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
+        <div class="title">
+            <h1>AD Redenção - Sistema de Cadastro</h1>
+        </div>
         <div class="links">
-            <a href="/" class="active">Instructors</a>
-            <a href="/members">Members</a>
+            <a href="/" class="active">Membros</a>
+            <a href="/instructors/create">Cadastrar</a>
+            <a href="/instructors/{{ instructors.id }}/edit">Editar</a>
         </div>
     </header>
 
