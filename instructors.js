@@ -41,7 +41,40 @@ exports.post = function(req, res) {
        }
    }
 
-   let {avatar_url, birth, name, gender, services} = req.body
+   let {
+       birth, 
+       gender, 
+       services,
+       nome,
+       endereco,
+       numero,
+       complemento,
+       bairro,
+       cep,
+       cidade,
+       estado,
+       pais,
+       nomePai,
+       nomeMae,
+       sexo,
+       rg,
+       cpf,
+       dataNascimento,
+       batismo,
+       uniao,
+       estadoCivil,
+       profissao,
+       empregado,
+       escolaridade,
+       email,
+       foneResidencial,
+       foneComercial,
+       celular,
+       foneRecados,
+       veioDe,
+       posicao,
+       eDirigente
+    } = req.body
 
    birth = Date.parse(birth)
    const created_at = Date.now()
@@ -51,13 +84,40 @@ exports.post = function(req, res) {
 
    // na 1° [] -> [{...}] na 2° [{...}] -> [{...}, {...}] 
    data.instructors.push({
-       id,
-       avatar_url,
-       name,
-       birth,
-       gender,
-       services,
-       created_at
+        id,
+        birth,
+        gender,
+        services,
+        created_at,
+        nome,
+        endereco,
+        numero,
+        complemento,
+        bairro,
+        cep,
+        cidade,
+        estado,
+        pais,
+        nomePai,
+        nomeMae,
+        sexo,
+        rg,
+        cpf,
+        dataNascimento,
+        batismo,
+        uniao,
+        estadoCivil,
+        profissao,
+        empregado,
+        escolaridade,
+        email,
+        foneResidencial,
+        foneComercial,
+        celular,
+        foneRecados,
+        veioDe,
+        posicao,
+        eDirigente
    }) //  na 3° [{...}, {...}] -> [{...}, {...}, {...}]
 
    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
