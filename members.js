@@ -2,6 +2,14 @@ const fs = require('fs');
 const data = require("./data.json")
 const { age, date } = require('./utils')
 
+// index 
+exports.index = function(req, res) {
+    
+    const membros = data.membros;
+
+    return res.render("members", {membros})
+}
+
 //show
 exports.show = function(req, res) {
     // req.query.id
@@ -42,6 +50,7 @@ exports.post = function(req, res) {
    }
 
    let {
+       image,
        birth, 
        gender, 
        services,
@@ -85,6 +94,7 @@ exports.post = function(req, res) {
    // na 1° [] -> [{...}] na 2° [{...}] -> [{...}, {...}] 
    data.instructors.push({
         id,
+        image,
         birth,
         gender,
         services,
@@ -123,7 +133,7 @@ exports.post = function(req, res) {
    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
        if (err) return res.send("write file error!")
 
-       return res.redirect("/instructors")
+       return res.redirect("/members")
    });
 
     //return res.send(req.body)

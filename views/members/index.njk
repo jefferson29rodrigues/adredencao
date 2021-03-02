@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="card">
+
+    {% for instructor in instructors %}
+
+        <div class="item">
+            <div>Foto</div>
+            <div>{{ instructor.image }}</div>
+        </div>
+
+        <div class="item">
+            <div>Nome</div>
+            <div>{{ instructor.nome }}</div>
+        </div>
+
+    {% endfor %}
+
+
+    Hello World
+
+</div>
+{% endblock content %}
