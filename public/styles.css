@@ -2,7 +2,7 @@
 
 :root {
     /*--primary-color: rgb(103, 255, 255);*/
-    --primary-color: rgb(179, 179, 179);
+    --primary-color: rgb(146, 145, 145);
     --secondary-color: yellow;
 }
 
@@ -90,7 +90,7 @@ header {
     grid-template-columns: 1fr;
 
     /* sombra */
-    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.4);
 
     /* animation */
     opacity: 0;
