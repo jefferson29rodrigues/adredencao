@@ -1,11 +1,9 @@
-const fs = require('fs');
-const data = require("./data.json")
 const { age, date } = require('./utils')
 
 // index 
 exports.index = function(req, res) {
     
-    const membros = data.membros;
+    const membros = ['Jeff', 'juh'];
 
     return res.render("members", {membros})
 }

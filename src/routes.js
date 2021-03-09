@@ -2,8 +2,8 @@ const express = require("express");
 const routes = express.Router();
 const members = require('./members');
 
-routes.get('/members', function(req, res) {
-    return res.render('members')
+routes.get('/', function(req, res) {
+    return res.redirect('members')
 });
 
 routes.get('/members/create', function(req, res) {

@@ -1,10 +1,10 @@
 const express = require('express');
+const routes = require('./routes');
+
 
 const server = express();
 
-server.get('/', function(req, res) {
-    return res.send("Hello World!!! Servidor")
-})
+server.use(routes);
 
 server.listen(5000, function() {
     console.log("Servidor Rodando!!!")
