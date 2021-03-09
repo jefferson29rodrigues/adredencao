@@ -1,10 +1,17 @@
 // const { age, date } = require('./utils')
+const Member = require('../models/Member');
+
 
 // // index 
 module.exports = {
      index(req, res){
         
-        return res.render("members/index")
+        Member.all(function(dadosDoBanco) {
+            console.log(dadosDoBanco)
+
+            return res.render("members/index", {dadosDoBanco})
+        })        
+
     }
 }
 

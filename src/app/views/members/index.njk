@@ -3,7 +3,7 @@
 {% block content %}
 <div class="card">
 
-    {% for instructor in instructors %}
+    {% for um in dadosDoBanco %}
 
         <div class="item">
             <div>Foto</div>
@@ -12,7 +12,7 @@
 
         <div class="item">
             <div>Nome</div>
-            <div>{{ instructor.nome }}</div>
+            <div>{{ um.nome }}</div>
         </div>
 
     {% endfor %}
