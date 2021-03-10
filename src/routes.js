@@ -9,6 +9,7 @@ routes.get('/', function(req, res) {
 
 routes.get('/members', members.index);
 routes.get('/members/create', members.create);
+routes.get('/members/:id', members.show)
 
 routes.post('/members', members.post);
 

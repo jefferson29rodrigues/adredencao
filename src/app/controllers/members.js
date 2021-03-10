@@ -13,6 +13,16 @@ module.exports = {
         })        
 
     },
+    show(req, res){
+        
+        Member.mostrarUm(req.params.id, function(dadosDoBanco) {
+
+            console.log(dadosDoBanco)
+
+            return res.render('members/show', {dadosDoBanco})
+        })
+
+    },
     create(req, res){
         
         return res.render('members/create')

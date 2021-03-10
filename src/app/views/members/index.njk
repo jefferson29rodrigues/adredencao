@@ -5,142 +5,19 @@
 
     {% for um in dadosDoBanco %}
 
-        <div class="item">
-            <div>Nome</div>
-            <div>{{ um.nome }}</div>
-        </div>
+        <div class="home-membro">
 
-        <div class="item">
-            <div>Endereço</div>
-            <div>{{ um.endereco }}</div>
-        </div>
+            <div class="item">
+                <div>{{ um.nome }}</div>
+            </div>
 
-         <div class="item">
-            <div>Número</div>
-            <div>{{ um.numero }}</div>
-        </div>
+            <a href="/members/{{ um.id }}">Ver</a>
 
-        <div class="campo">
-            <div>Complemento:</div>
-            <div>{{ um.complemento }}</div>
         </div>
-
-        <div class="campo">
-            <div>Bairro:</div>
-            <div>{{ um.bairro }}</div>
-        </div>
-
-        <div class="campo">
-            <div>CEP:</div>
-            <div>{{ um.cep }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Cidade:</div>
-            <div>{{ um.cidade }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Estado:</div>
-            <div>{{ um.estado }}</div>
-        </div>
-
-        <div class="campo">
-            <div>País:</div>
-            <div>{{ um.pais }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Nome da mãe:</div>
-            <div>{{ um.nomemae }}</div>
-        </div>
-
-        <div class="campo">
-            <div>RG:</div>
-            <div>{{ um.rg }}</div>
-        </div>
-
-        <div class="campo">
-            <div>CPF:</div>
-            <div>{{ um.cpf }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Data de nascimento:</div>
-            <div>{{ um.datanascimento }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Data de batismo:</div>
-            <div>{{ um.databatismo }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Estado civil:</div>
-            <div>{{ um.estadocivil }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Data de união:</div>
-            <div>{{ um.datauniao }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Empregado:</div>
-            <div>{{ um.empregado }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Profissão:</div>
-            <div>{{ um.profissao }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Escolaridade:</div>
-            <div>{{ um.escolaridade }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Email:</div>
-            <div>{{ um.email }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Celular:</div>
-            <div>{{ um.celular }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Telefone residencial:</div>
-            <div>{{ um.foneresidencial }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Telefone de recados:</div>
-            <div>{{ um.fonerecados }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Veio da igreja:</div>
-            <div>{{ um.veiodaigreja }}</div>
-        </div>
-
-        <div class="campo">
-            <div>Posição:</div>
-            <div>{{ um.posicao }}</div>
-        </div>
-
-        <div class="campo">
-            <div>É dirigente:</div>
-            <div>{{ um.edirigente }}</div>
-        </div>
-        **************************************************************
-        <br><br>
+        
+        *******************************************************************************************************************
 
     {% endfor %}
-
-
-    Hello World adredencao!
 
 </div>
 {% endblock content %}
