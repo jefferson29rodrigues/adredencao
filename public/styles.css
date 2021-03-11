@@ -37,7 +37,7 @@ header {
 /* pag Create */
 
 .pag-create {
-    margin: 0 200px;
+    margin: 0 200px 50px;
 }
 
 /* pag Show */
@@ -49,7 +49,34 @@ header {
 /* pag Edit */
 
 .pag-edit {
-    margin: 0 200px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+
+    margin: auto;
+
+    width: 1000px;
+    height: 1190px;
+}
+
+/*
+.form-edit {}
+
+.form-delete {}
+*/
+
+#botao-edit {
+    width: 480px;
+    height: 45px;
+}
+
+#botao-delete {
+    margin-top: 1123px;
+
+    width: 480px;
+    height: 45px;
+    
+    background-color: red;
 }
 
 .title {
