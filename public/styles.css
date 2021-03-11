@@ -28,17 +28,28 @@ header {
 
 /* pag Index */
 
-.home-membro {
+.pag-home {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    padding-top: 35px;
+}
+
+/* pag Create */
+
+.pag-create {
+    margin: 0 200px;
 }
 
 /* pag Show */
 
-.perfil {
+.pag-show {
     margin: 0 300px;
+}
+
+/* pag Edit */
+
+.pag-edit {
+    margin: 0 200px 50px;
 }
 
 .title {

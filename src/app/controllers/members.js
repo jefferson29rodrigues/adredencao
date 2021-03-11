@@ -46,5 +46,18 @@ module.exports = {
         })
 
 
+    },
+    put(req, res){
+        
+        Member.update(req.body, function() {
+
+            return res.redirect(`/members/${req.body.id}`)
+        })
+    },
+    delete(req, res){
+        Member.apagar(req.body.id, function() {
+
+            return res.redirect('/members')
+        })
     }
 }
