@@ -7,11 +7,17 @@
 
         <div class="home-membro">
 
-            <div class="item">
+            <div class="nome">
                 <div>{{ um.nome }}</div>
             </div>
 
-            <a href="/members/{{ um.id }}">Ver</a>
+            <div class="ver">
+                <a href="/members/{{ um.id }}">Ver</a>
+            </div>
+
+            <div class="editar">
+                <a href="/members/{{ um.id }}/edit">Editar</a>
+            </div>
 
         </div>
         

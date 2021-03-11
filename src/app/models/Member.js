@@ -113,5 +113,12 @@ module.exports = {
 
             callback(results.rows[0])
         })
+    },
+    editarUm(id, callback) {
+        db.query(`SELECT * FROM membros WHERE id = ${id}`, function(err, results) {
+            if (err) throw `Database Error ${err}`
+
+            callback(results.rows[0])
+        })
     }
 }

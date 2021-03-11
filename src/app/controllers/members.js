@@ -35,5 +35,16 @@ module.exports = {
             return res.redirect(`/members`)
         })
 
+    },
+    edit(req, res){
+        
+        Member.editarUm(req.params.id, function(dadosDoBanco) {
+
+            console.log(dadosDoBanco)
+
+            return res.render('members/edit', {dadosDoBanco})
+        })
+
+
     }
 }
